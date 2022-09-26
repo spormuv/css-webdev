@@ -94,7 +94,8 @@ h2.title {
   color: var(--font-orange);
 }
 
-.promo_btn {
+.promo_btn,
+.gift_btn {
   width: 313px;
   height: 73px;
   display: block;
@@ -292,4 +293,35 @@ h2.title {
   line-height: 20px;
   text-align: center;
   color: #efefef;
+}
+
+/*section gift
+---------------------*/
+
+.gift {
+  min-height: 631px;
+  padding: 88px 0;
+
+  background: #efefef;
+}
+
+.gift .gift_img {
+  display: block;
+  margin: 0 auto;
+}
+
+.gift .gift_text {
+  margin-top: 45px;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 43px;
+  text-align: center;
+  color: #252525;
+}
+
+.gift .gift_btn {
+  margin-top: 51px;
 }
