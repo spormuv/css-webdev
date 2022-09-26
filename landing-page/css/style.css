@@ -325,3 +325,85 @@ h2.title {
 .gift .gift_btn {
   margin-top: 51px;
 }
+
+/*section first
+---------------------*/
+
+.first {
+  min-height: 514px;
+  padding: 81px 0 51px;
+}
+
+.first .first_img {
+  display: block;
+  margin: 0 auto;
+}
+
+.first .first_text {
+  text-align: center;
+}
+.first .line1 {
+  margin-top: 36px;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #252525;
+}
+.first .line2 {
+  margin-top: 30px;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #299cbd;
+}
+.first .line3 {
+  margin-top: 24px;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 20px;
+  color: #4a4a4a;
+}
+
+/*footer
+---------------------*/
+
+.footer {
+  min-height: 169px;
+  padding: 57px 0 69px;
+
+  text-align: center;
+
+  background: #1a1a1a;
+}
+
+.footer a.footer_link,
+.footer .footer_tel {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 21px;
+  text-decoration-line: underline;
+  color: #888888;
+}
+
+.footer .footer_tel {
+  text-decoration-line: none;
+}
+
+.footer .footer_link span {
+  margin: 0 5px;
+
+  color: #888888;
+}
