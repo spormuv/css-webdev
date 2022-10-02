@@ -1,3 +1,61 @@
+/* common
+--------------------------*/
 * {
   font-family: 'Roboto', sans-serif;
+}
+
+/* header
+--------------------------*/
+
+nav {
+  height: 50px;
+
+  background: #212121;
+}
+
+.menu {
+  padding: 13px 70px;
+  margin: 0;
+
+  display: flex;
+  justify-content: space-between;
+
+  list-style: none;
+}
+
+.menu .menu_link {
+  font-weight: 300;
+  font-size: 15px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.menu .menu_item {
+  border-right: 2px dotted #000;
+  padding-right: 28px;
+}
+
+.menu .menu_item:last-child {
+  border-right: none;
+  padding-right: 0;
+}
+
+.subheader {
+  height: 84px;
+
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.subheader .subheader_logo {
+  display: block;
+  margin-top: 16px;
+  max-width: 100%;
+}
+
+.subheader .subheader_official {
+  margin-top: 6px;
+  font-weight: 100;
+  font-size: 13px;
+  color: #ffffff;
+  opacity: 0.5;
 }
