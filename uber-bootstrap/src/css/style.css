@@ -59,3 +59,43 @@ nav {
   color: #ffffff;
   opacity: 0.5;
 }
+
+.subheader .subheader_call {
+  margin-top: 22px;
+
+  font-weight: 300;
+  font-size: 12px;
+  text-align: right;
+  color: #ffffff;
+}
+
+.subheader .subheader_phone {
+  display: block;
+  margin-top: 8px;
+
+  font-weight: 400;
+  font-size: 22px;
+  text-align: right;
+  text-transform: uppercase;
+  color: #ffffff;
+  line-height: 12px;
+  text-decoration: none;
+}
+
+.subheader .subheader_btn {
+  width: 172px;
+  height: 46px;
+  margin-top: 22px;
+
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21);
+
+  background: linear-gradient(0deg, #1eacc7 0%, #4ce2ff 100%);
+  box-shadow: inset 0px -3px 0px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  border: none;
+}
