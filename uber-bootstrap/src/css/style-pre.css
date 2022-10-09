@@ -194,6 +194,8 @@ nav {
 }
 
 .label {
+  position: relative;
+  z-index: 2;
   margin: 0 auto;
   height: 24px;
   width: 112px;
@@ -205,8 +207,14 @@ nav {
   color: #ffffff;
   background-color: #000000;
 }
+.label_white {
+  color: #000;
+  background-color: #fff;
+}
 
 .title {
+  position: relative;
+  z-index: 2;
   margin-bottom: 0;
   margin-top: 38px;
   color: #222222;
@@ -215,16 +223,24 @@ nav {
   text-transform: uppercase;
   text-align: center;
 }
+.title_white {
+  color: #fff;
+}
 
 .subtitle {
   margin-top: 19px;
+  position: relative;
+  z-index: 2;
   font-weight: 400;
   font-size: 17px;
   text-align: center;
   color: #222222;
 }
+.subtitle_white {
+  color: #fff;
+}
 
-/* mobile
+/* section mobile
   ------------------------------------------------------*/
 .mobile {
   min-height: 864px;
@@ -287,4 +303,35 @@ nav {
   background: #000000;
   border-radius: 50%;
   cursor: pointer;
+}
+
+/* section choice
+  ------------------------------------------------------*/
+.choice {
+  min-height: 895px;
+  padding: 59px 0 137px 0;
+  position: relative;
+  background: url("../img/bg/mobile_app.png") center center/cover no-repeat;
+}
+.choice_img {
+  margin: 56px auto 0;
+  position: relative;
+  display: block;
+  z-index: 2;
+}
+.choice_descr {
+  font-weight: 300;
+  font-size: 17px;
+  text-align: center;
+  color: #222222;
+  line-height: 24px;
+}
+.choice .black {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 499px;
+  width: 100%;
+  background-color: #070716;
+  z-index: 1;
 }/*# sourceMappingURL=style-pre.css.map */

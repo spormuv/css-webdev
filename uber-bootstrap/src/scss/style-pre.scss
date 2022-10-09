@@ -1,3 +1,6 @@
+$main-color: #1eacc7;
+$second-color: #ff5656;
+
 * {
   font-family: 'Roboto', sans-serif;
 }
@@ -78,7 +81,7 @@ nav {
     text-transform: uppercase;
     color: #ffffff;
     text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21);
-    background: linear-gradient(0deg, #1eacc7 0%, #4ce2ff 100%);
+    background: linear-gradient(0deg, $main-color 0%, #4ce2ff 100%);
     box-shadow: inset 0px -3px 0px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
     border: none;
@@ -126,7 +129,7 @@ nav {
     text-transform: uppercase;
     color: #ffffff;
     text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21);
-    background: linear-gradient(0deg, #1eacc7 0%, #4ce2ff 100%);
+    background: linear-gradient(0deg, $main-color 0%, #4ce2ff 100%);
     box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
     border: none;
@@ -146,7 +149,7 @@ nav {
       display: flex;
       justify-content: center;
       align-items: center;
-      background-color: #1eacc7;
+      background-color: $main-color;
       border-radius: 50%;
     }
     .reasons_descr {
@@ -155,7 +158,7 @@ nav {
         font-weight: 400;
         font-size: 17px;
         line-height: 21px;
-        color: #1eacc7;
+        color: $main-color;
       }
       .reasons_text {
         font-weight: 300;
@@ -167,6 +170,8 @@ nav {
   }
 }
 .label {
+  position: relative;
+  z-index: 2;
   margin: 0 auto;
   height: 24px;
   width: 112px;
@@ -177,8 +182,14 @@ nav {
   text-align: center;
   color: #ffffff;
   background-color: #000000;
+  &_white {
+    color: #000;
+    background-color: #fff;
+  }
 }
 .title {
+  position: relative;
+  z-index: 2;
   margin-bottom: 0;
   margin-top: 38px;
   color: #222222;
@@ -186,17 +197,26 @@ nav {
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
+  &_white {
+    color: #fff;
+  }
 }
 .subtitle {
   margin-top: 19px;
+
+  position: relative;
+  z-index: 2;
 
   font-weight: 400;
   font-size: 17px;
   text-align: center;
   color: #222222;
+  &_white {
+    color: #fff;
+  }
 }
 
-/* mobile
+/* section mobile
   ------------------------------------------------------*/
 .mobile {
   min-height: 864px;
@@ -260,5 +280,40 @@ nav {
       border-radius: 50%;
       cursor: pointer;
     }
+  }
+}
+
+/* section choice
+  ------------------------------------------------------*/
+
+.choice {
+  min-height: 895px;
+  padding: 59px 0 137px 0;
+
+  position: relative;
+
+  background: url('../img/bg/mobile_app.png') center center/cover no-repeat;
+  &_img {
+    margin: 56px auto 0;
+
+    position: relative;
+    display: block;
+    z-index: 2;
+  }
+  &_descr {
+    font-weight: 300;
+    font-size: 17px;
+    text-align: center;
+    color: #222222;
+    line-height: 24px;
+  }
+  .black {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 499px;
+    width: 100%;
+    background-color: #070716;
+    z-index: 1;
   }
 }
