@@ -417,3 +417,31 @@ nav {
     }
   }
 }
+
+/* world
+  ------------------------------------------------------*/
+
+.world {
+  min-height: 717px;
+  padding: 49px 0;
+
+  position: relative;
+
+  background: url('../img/bg/map.jpg') center center/cover no-repeat;
+  &_link {
+    position: absolute;
+    left: 50%;
+    bottom: 49px;
+    transform: translateX(-50%);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 68px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #1fbad6;
+    text-decoration: none;
+    &:hover {
+      color: #fff;
+    }
+  }
+}
