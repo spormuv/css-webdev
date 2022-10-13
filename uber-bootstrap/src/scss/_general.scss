@@ -14,15 +14,15 @@ nav {
   display: flex;
   justify-content: space-between;
   list-style: none;
-  .menu_link {
+  &_link {
     font-weight: 300;
     font-size: 15px;
     color: #ffffff;
     text-decoration: none;
   }
-  .menu_item {
+  &_item {
     border-right: 2px dotted #000;
-    padding-right: 28px;
+    padding-right: 50px;
     &:last-child {
       border-right: none;
       padding-right: 0;
@@ -35,26 +35,26 @@ nav {
   position: absolute;
   top: 50px;
   background: rgba(0, 0, 0, 0.6);
-  .subheader_logo {
+  &_logo {
     display: block;
     margin-top: 16px;
     max-width: 100%;
   }
-  .subheader_official {
+  &_official {
     margin-top: 6px;
     font-weight: 100;
     font-size: 13px;
     color: #ffffff;
     opacity: 0.5;
   }
-  .subheader_call {
+  &_call {
     margin-top: 22px;
     font-weight: 300;
     font-size: 12px;
     text-align: right;
     color: #ffffff;
   }
-  .subheader_phone {
+  &_phone {
     display: block;
     margin-top: 8px;
     font-weight: 400;
@@ -86,7 +86,7 @@ nav {
   min-height: 800px;
   padding: 150px 0 135px 0;
   background: url('../img/bg/main_bg.jpg') center center/cover no-repeat;
-  .promo_header {
+  &_header {
     margin-bottom: 0;
     font-weight: 700;
     font-size: 60px;
@@ -133,38 +133,39 @@ nav {
 }
 .reasons {
   padding: 71px 0 65px 0;
-  .reasons_block {
+  &_block {
     margin-top: 35px;
     display: flex;
     justify-content: center;
     align-items: center;
-    .reasons_round {
-      width: 113px;
-      height: 113px;
-      margin-right: 26px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: $main-color;
-      border-radius: 50%;
+  }
+  &_round {
+    width: 113px;
+    height: 113px;
+    margin-right: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $main-color;
+    border-radius: 50%;
+  }
+  &_descr {
+    width: 343px;
+    .reasons_subtitle {
+      font-weight: 400;
+      font-size: 17px;
+      line-height: 21px;
+      color: $main-color;
     }
-    .reasons_descr {
-      width: 343px;
-      .reasons_subtitle {
-        font-weight: 400;
-        font-size: 17px;
-        line-height: 21px;
-        color: $main-color;
-      }
-      .reasons_text {
-        font-weight: 300;
-        font-size: 15px;
-        line-height: 21px;
-        color: #202020;
-      }
+    .reasons_text {
+      font-weight: 300;
+      font-size: 15px;
+      line-height: 21px;
+      color: #202020;
     }
   }
 }
+
 .label {
   position: relative;
   z-index: 2;
