@@ -22,12 +22,43 @@
   }
   .mobile {
     &_item {
-      width: 300px;
+      width: 290px;
+      &_subtitle {
+        font-size: 22px;
+      }
+    }
+  }
+  .choice {
+    padding: 55px 0;
+    min-height: 840px;
+  }
+  .footer {
+    &_wrapper > div {
+      width: 50%;
+      &:nth-child(1) {
+        width: 25%;
+      }
+      &:nth-child(3) {
+        width: 25%;
+        justify-content: flex-end;
+      }
+    }
+    &_mobile {
+      display: flex;
+      a {
+        margin: 0 3px;
+        img {
+          width: 100%;
+        }
+      }
     }
   }
 }
 
 @media (max-width: 991px) {
+  .title {
+    font-size: 28px;
+  }
   .menu {
     &_item {
       padding-right: 8px;
@@ -70,10 +101,52 @@
     &_descr {
       margin-top: 20px;
     }
+    &_round {
+      margin-right: 0;
+    }
+  }
+  .choice {
+    min-height: 800px;
+    &_img {
+      width: 100%;
+    }
+  }
+  .world {
+    min-height: 650px;
+  }
+  .footer {
+    &_wrapper {
+      flex-wrap: wrap;
+    }
+    &_wrapper > div {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+      &:nth-child(1) {
+        width: 100%;
+      }
+      &:nth-child(3) {
+        width: 100%;
+        justify-content: center;
+      }
+    }
+  }
+  .mobile {
+    &_item {
+      width: 230px;
+      margin: 0 auto 10px;
+      &_subtitle {
+        font-size: 18px;
+      }
+    }
   }
 }
 
 @media (max-width: 767px) {
+  .title {
+    margin-top: 25px;
+  }
   .menu {
     position: fixed;
     flex-direction: column;
