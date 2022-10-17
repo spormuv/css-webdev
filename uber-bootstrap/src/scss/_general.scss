@@ -1,5 +1,6 @@
 header {
   position: relative;
+  height: 50px;
 }
 nav {
   height: 50px;
@@ -29,6 +30,11 @@ nav {
     }
   }
 }
+
+.hamburger {
+  display: none;
+}
+
 .subheader {
   height: 84px;
   width: 100%;
@@ -65,7 +71,8 @@ nav {
     line-height: 12px;
     text-decoration: none;
   }
-  .subheader_btn {
+
+  &_btn {
     width: 172px;
     height: 46px;
     margin-top: 22px;
@@ -82,6 +89,7 @@ nav {
     @include btn_hover;
   }
 }
+
 .promo {
   min-height: 800px;
   padding: 150px 0 135px 0;
@@ -95,7 +103,7 @@ nav {
     color: #ffffff;
     line-height: 60px;
   }
-  .promo_subheader {
+  &_subheader {
     margin-bottom: 0;
     margin-top: 22px;
     font-weight: 700;
@@ -105,7 +113,7 @@ nav {
     color: #ffffff;
     line-height: 36px;
   }
-  .promo_descr {
+  &_descr {
     margin-top: 16px;
     font-weight: 400;
     font-size: 18px;
@@ -113,7 +121,7 @@ nav {
     text-align: center;
     color: #ffffff;
   }
-  .promo_btn {
+  &_btn {
     width: 259px;
     height: 63px;
     margin: 118px auto 0;
@@ -151,18 +159,18 @@ nav {
   }
   &_descr {
     width: 343px;
-    .reasons_subtitle {
-      font-weight: 400;
-      font-size: 17px;
-      line-height: 21px;
-      color: $main-color;
-    }
-    .reasons_text {
-      font-weight: 300;
-      font-size: 15px;
-      line-height: 21px;
-      color: #202020;
-    }
+  }
+  &_subtitle {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 21px;
+    color: $main-color;
+  }
+  &_text {
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 21px;
+    color: #202020;
   }
 }
 
@@ -529,4 +537,8 @@ footer {
       text-decoration: none;
     }
   }
+}
+
+.xs-visible {
+  display: none;
 }
