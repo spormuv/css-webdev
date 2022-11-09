@@ -1,0 +1,41 @@
+.feed {
+  padding-bottom: 48px;
+  &__person {
+    margin-top: 60px;
+    display: flex;
+  }
+  &__img {
+    width: 169px;
+    height: 169px;
+  }
+  &__info {
+    margin-left: 60px;
+  }
+  &__name {
+    font-weight: 700;
+    font-size: 18px;
+    color: #0d0d0d;
+  }
+  &__stage {
+    font-weight: 500;
+    font-size: 14px;
+    color: #646464;
+  }
+  &__text {
+    margin-top: 10px;
+    padding-right: 60px;
+    font-weight: 300;
+    font-size: 16px;
+    color: #0d0d0d;
+  }
+  &__link {
+    font-weight: 300;
+    font-size: 16px;
+    color: #0d0d0d;
+
+    cursor: pointer;
+    &:hover {
+      color: #0d0d0d;
+    }
+  }
+}
