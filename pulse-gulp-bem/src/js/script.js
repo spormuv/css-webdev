@@ -61,3 +61,41 @@ function addEvent(btn) {
 
 addEvent(more);
 addEvent(back);
+
+//modal
+
+const overlay = document.querySelector('.overlay');
+const modalConsult = document.querySelector('#consultation');
+const modalOrder = document.querySelector('#order');
+const modalThanks = document.querySelector('#thanks');
+
+const modalClose = document.querySelectorAll('.modal__close');
+const btnConsult = document.querySelectorAll('[data-modal="consultation"]');
+const btnMini = document.querySelectorAll('.button_mini');
+
+function reset() {
+  overlay.style.display = 'none';
+  modalConsult.style.display = 'none';
+  modalOrder.style.display = 'none';
+  modalThanks.style.display = 'none';
+}
+
+btnConsult.forEach((btn) =>
+  btn.addEventListener('click', () => {
+    overlay.style.display = 'block';
+    modalConsult.style.display = 'block';
+  })
+);
+
+btnMini.forEach((btn) =>
+  btn.addEventListener('click', (e) => {
+    const order = e.target
+      .closest('.catalog-item')
+      .querySelector('.catalog-item__subtitle').textContent;
+    modalOrder.querySelector('.modal__descr').textContent = order;
+    overlay.style.display = 'block';
+    modalOrder.style.display = 'block';
+  })
+);
+
+modalClose.forEach((item) => item.addEventListener('click', reset));
