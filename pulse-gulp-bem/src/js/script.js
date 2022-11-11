@@ -66,6 +66,8 @@ $(document).ready(function () {
   validateForms('#consultation-form');
   validateForms('#consultation form');
   validateForms('#order form');
+
+  $('input[name="phone"]').mask('(999) 999-9999');
 });
 
 //tab cards toggle class
