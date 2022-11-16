@@ -154,3 +154,18 @@ btnMini.forEach((btn) =>
 );
 
 modalClose.forEach((item) => item.addEventListener('click', reset));
+
+//scroll
+
+const up = document.querySelector('.pageup');
+
+window.addEventListener('scroll', () => {
+  if (this.scrollY > 800) {
+    up.style.display = 'block';
+    setTimeout(() => (up.style.opacity = '1'), 300);
+  } else {
+    new Promise((res) => {
+      setTimeout(() => res((up.style.opacity = '0')), 300);
+    }).then(() => (up.style.display = 'none'));
+  }
+});

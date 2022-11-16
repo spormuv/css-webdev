@@ -11,10 +11,16 @@
 @import 'blocks/feed';
 @import 'blocks/footer';
 @import 'blocks/modal';
+@import 'blocks/pageup';
 
 * {
   font-family: 'Museo Sans Cyrl', sans-serif;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
 a {
   text-decoration: none;
 }
