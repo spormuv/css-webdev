@@ -169,3 +169,6 @@ window.addEventListener('scroll', () => {
     }).then(() => (up.style.display = 'none'));
   }
 });
+
+//animation scroll
+new WOW().init();
