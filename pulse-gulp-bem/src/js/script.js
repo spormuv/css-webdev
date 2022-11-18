@@ -97,12 +97,7 @@ const back = document.querySelectorAll('.catalog-item__back');
 
 function toggleClass() {
   const wrapper = this.closest('div.catalog-item__wrapper');
-  wrapper
-    .querySelector('.catalog-item__content')
-    .classList.toggle('catalog-item__content_active');
-  wrapper
-    .querySelector('.catalog-item__list')
-    .classList.toggle('catalog-item__list_active');
+  wrapper.classList.toggle('catalog-item__wrapper_active');
 }
 
 function addEvent(btn) {
@@ -162,10 +157,10 @@ const up = document.querySelector('.pageup');
 window.addEventListener('scroll', () => {
   if (this.scrollY > 800) {
     up.style.display = 'block';
-    setTimeout(() => (up.style.opacity = '1'), 300);
+    setTimeout(() => (up.style.opacity = '1'), 500);
   } else {
     new Promise((res) => {
-      setTimeout(() => res((up.style.opacity = '0')), 300);
+      setTimeout(() => res((up.style.opacity = '0')), 500);
     }).then(() => (up.style.display = 'none'));
   }
 });

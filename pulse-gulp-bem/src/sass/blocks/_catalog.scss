@@ -118,6 +118,12 @@
     &__wrapper {
       display: flex;
       width: calc(200% + 40px);
+      transform: translateX(0%);
+      transition: all 0.3s linear;
+      &_active {
+        transform: translateX(-50%);
+        margin-left: 0;
+      }
     }
     &__content {
       width: 50%;
@@ -129,21 +135,19 @@
         margin-right: 20px;
       }
     }
-    &__list {
+
+    &__list-menu {
       width: 50%;
-      margin-left: 20px;
+      position: relative;
+    }
+
+    &__list {
       padding-right: 20px;
       padding-left: 19px;
       margin-bottom: 0;
       position: relative;
 
       list-style-type: none;
-      transform: translateX(0%);
-      transition: all 0.3s linear;
-      &_active {
-        transform: translateX(-100%);
-        margin-left: 0;
-      }
       li {
         margin-bottom: 20px;
         position: relative;
@@ -162,6 +166,40 @@
         }
       }
     }
+
+    // &__list {
+    //   width: 50%;
+    //   margin-left: 20px;
+    //   padding-right: 20px;
+    //   padding-left: 19px;
+    //   margin-bottom: 0;
+    //   position: relative;
+
+    //   list-style-type: none;
+    //   transform: translateX(0%);
+    //   transition: all 0.3s linear;
+    //   &_active {
+    //     transform: translateX(-100%);
+    //     margin-left: 0;
+    //   }
+    //   li {
+    //     margin-bottom: 20px;
+    //     position: relative;
+
+    //     font-weight: 300;
+    //     font-size: 14px;
+    //     color: #555555;
+    //     &::before {
+    //       content: '';
+    //       position: absolute;
+    //       width: 5px;
+    //       height: 5px;
+    //       background-color: $main-color;
+    //       left: -14px;
+    //       top: 7px;
+    //     }
+    //   }
+    // }
 
     &__back {
       position: absolute;
