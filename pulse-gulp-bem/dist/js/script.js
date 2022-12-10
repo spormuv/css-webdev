@@ -1,23 +1,7 @@
 'use strict';
 
 $(document).ready(function () {
-  $('.carousel__inner').slick({
-    speed: 800,
-    // adaptiveHeight: true,
-    prevArrow:
-      '<button type="button" class="slick-prev"><img src="icons/left.svg"></button>',
-    nextArrow:
-      '<button type="button" class="slick-next"><img src="icons/right.svg"></button>',
-    responsive: [
-      {
-        breakpoint: 992,
-        settings: {
-          dots: true,
-          arrows: false,
-        },
-      },
-    ],
-  });
+  // tabs
   $('ul.catalog__tabs').on(
     'click',
     'li:not(.catalog__tab_active)',
@@ -90,8 +74,44 @@ $(document).ready(function () {
   });
 });
 
-//tab cards toggle class
+// carousel
+const slides = document.querySelectorAll('.slide');
+slides.forEach((slide, indx) => {
+  slide.style.transform = `translateX(${indx * 100}%)`;
+});
 
+const nextSlide = document.querySelector('.btn-next');
+
+let curSlide = 0;
+let maxSlide = slides.length - 1;
+
+nextSlide.addEventListener('click', function () {
+  if (curSlide === maxSlide) {
+    curSlide = 0;
+  } else {
+    curSlide++;
+  }
+
+  slides.forEach((slide, indx) => {
+    slide.style.transform = `translateX(${100 * (indx - curSlide)}%)`;
+  });
+});
+
+const prevSlide = document.querySelector('.btn-prev');
+
+prevSlide.addEventListener('click', function () {
+  if (curSlide === 0) {
+    curSlide = maxSlide;
+  } else {
+    curSlide--;
+  }
+
+  slides.forEach((slide, indx) => {
+    slide.style.transform = `translateX(${100 * (indx - curSlide)}%)`;
+  });
+});
+
+//tab cards toggle class
 const more = document.querySelectorAll('.catalog-item__link');
 const back = document.querySelectorAll('.catalog-item__back');
 
