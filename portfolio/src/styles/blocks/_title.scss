@@ -1,0 +1,27 @@
+.title {
+  font-weight: bold;
+  font-size: 3.6rem;
+  line-height: 6rem;
+  &_fs14 {
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+  }
+  &_fs16 {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
+  &_fs20 {
+    font-size: 2rem;
+  }
+  &_fs36 {
+    font-size: 3.6rem;
+  }
+  &_fs48 {
+    font-size: 4.8rem;
+  }
+  &_marked {
+    position: relative;
+    z-index: 1;
+    @include before_circle;
+  }
+}

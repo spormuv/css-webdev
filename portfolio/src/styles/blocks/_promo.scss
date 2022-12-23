@@ -1,0 +1,26 @@
+.promo {
+  position: relative;
+  min-height: 100vh;
+  padding-top: 25vh;
+  background: url('img/main_bg.jpg') left 40% / cover no-repeat;
+  .title_fs16 {
+    margin-bottom: 1rem;
+  }
+  .title_fs48 {
+    margin-bottom: 2.5rem;
+  }
+  &__btns {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+  }
+  &__link {
+    color: #000;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-decoration: none;
+    &:hover {
+      color: #000;
+    }
+  }
+}
