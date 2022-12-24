@@ -143,7 +143,12 @@ module.exports = {
   // plugins
   plugins: [
     new HtmlWebpackPlugin({
+      filename: 'index.html',
       template: path.resolve(__dirname, 'src/index.html'),
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'policy.html',
+      template: path.resolve(__dirname, 'src/policy.html'),
     }),
     new MiniCssExtractPlugin({
       filename: '[name].[contenthash:8].css',

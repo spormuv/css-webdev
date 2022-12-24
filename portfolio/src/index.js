@@ -1,6 +1,7 @@
 'use strict';
 
 import './index.html';
+// import './policy.html';
 import './style.scss';
 
 // hamburger
