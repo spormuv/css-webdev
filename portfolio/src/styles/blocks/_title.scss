@@ -24,4 +24,14 @@
     z-index: 1;
     @include before_circle;
   }
+  &__section-title {
+    position: relative;
+    text-align: center;
+    @include before_circle;
+    &::before {
+      left: 50%;
+      top: -0.5rem;
+      transform: translateX(-50%);
+    }
+  }
 }

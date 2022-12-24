@@ -3,6 +3,7 @@
 import './index.html';
 import './style.scss';
 
+// hamburger
 const hamburger = document.querySelector('.hamburger');
 const menuClose = document.querySelector('.menu__close');
 const menu = document.querySelector('.menu');
@@ -19,3 +20,10 @@ menuLinks.forEach((link) =>
     menu.classList.remove('menu_active');
   })
 );
+
+// skills rating width
+const counters = document.querySelectorAll('.skills__ratings-counter');
+counters.forEach((counter) => {
+  const span = counter.parentElement.querySelector('span');
+  span.style.width = counter.textContent;
+});
