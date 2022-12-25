@@ -12,13 +12,13 @@
   &__btns {
     display: flex;
     align-items: center;
-    gap: 4rem;
   }
   &__link {
     color: #000;
     font-size: 1.4rem;
     font-weight: bold;
     text-decoration: none;
+    padding: 1.2rem 2.5rem;
     &:hover {
       color: #000;
     }
