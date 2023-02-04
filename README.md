@@ -1,6 +1,6 @@
 # WEB-developer
 
-Here are finished educational projects from the [WEB-developer](https://www.udemy.com/course/webdeveloper/) course.
+Here are completed educational projects from the [WEB-developer](https://www.udemy.com/course/webdeveloper/) course.
 
 ## These projects are:
 
